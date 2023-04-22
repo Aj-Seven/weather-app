@@ -74,11 +74,13 @@ input:focus {
 }
 
 ul {
-    width: 100%;
+    margin: auto;
     text-decoration: none;
 }
 
 li {
+    width: 30px;
+    height: 30px;
     text-decoration: none;
     list-style: none;
     padding: auto;
