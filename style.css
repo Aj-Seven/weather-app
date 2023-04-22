@@ -74,6 +74,8 @@ input:focus {
 }
 
 ul {
+    border-radius: 22px;
+    backdrop-filter: blur(10px);
     margin: auto;
     text-decoration: none;
 }
@@ -83,7 +85,7 @@ li {
     height: 30px;
     text-decoration: none;
     list-style: none;
-    padding: auto;
+    padding: 1em;
     border-radius: 30px;
     display: inline-table;
     padding: 3em;
