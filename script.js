@@ -31,6 +31,8 @@ function addWeatherToHtml(data) {
     const uv = document.getElementById('uv');
     const V = document.getElementById('V');
     const AP = document.getElementById('AP');
+    const day_time = getDateTime(data.dt, data.timezone);
+    day.innerText = day_time;
     deg.innerText = temp + "°" + "C";
     wName.innerText = data.weather[0].main;
     lName.innerText = data.name + ", " + data.sys.country;
@@ -45,6 +47,22 @@ function addWeatherToHtml(data) {
 
 function KtoC(K) {
     return Math.floor(K - 273.15);
+}
+
+function getDateTime(dt, timezone) {
+  const date = new Date((dt + timezone) * 1000);
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: false,
+    timeZoneOffset: timezone
+  };
+  const dateTimeStr = date.toLocaleString(undefined, options);
+  return dateTimeStr;
 }
 
 form.addEventListener('submit', (e) => {
