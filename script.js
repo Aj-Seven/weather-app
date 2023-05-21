@@ -41,7 +41,7 @@ function addWeatherToHtml(data) {
   h.innerText = data.main.humidity + "%";
   v.innerText = VC + "km";
   aP.innerText = data.main.pressure + "hPa";
-  deg.innerText = temp + "°" + "C";
+  deg.innerText = temp + "°" + "C" + " " + data.weather[0].main;
   day.innerText = day_time;
   loc.innerText = data.name + ", " + data.sys.country;
 }
