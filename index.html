@@ -9,55 +9,43 @@
 </head>
 
 <body>
-    <header>
-    <h3>Weather App</h3>
+<header>
     <form id="form">
         <input type="text" id="search" placeholder="Search By Loaction" autocomplete="off">
+        <button type="submit"> 🔍 </button>
+    </form>
     </header>
-    </div>
-    <h1 id="loc"> Loaction </h1>
+  <div id="container" class="container">
     <div id="basic">
-        <h2 id="deg">0°C</h2>
-        <h3 id="wname">Cold</h3>
-    </div>
-    <div id="basic1">
-    <h2 id="day"> Day </h2>
-    <h2 id="airs"> Air Satisfactory </h2>
+        <h1 id="loc"> LOC </h1>
+        <h1 id="deg"> 0C clear </h1>
+        <h2 id="day"> Time </h2>
     </div>
     <div id="details">
         <ul>
             <li>Feels Like
-                <p id="fl">
-                    0°C
+                <p id="fL">
+                0C
                 </p>
             </li>
-            <li>Wind
-                <p id="wind">
-
-                </p>
-            </li>
-            <li>Humidity
+            <li> Humidity
                 <p id="h">
-                    %
+    %
                 </p>
             </li>
-            <li>UV
-                <p id="uv">
-                    0
-                </p>
-            </li>
-            <li>Visibility
-                <p id="V">
-                    0km
+            <li> Visibility
+                <p id="v">
+                0km
                 </p>
             </li>
             <li>Air Pressure
-                <p id="AP">
-                    hPa
+                <p id="aP">
+                hPa
                 </p>
             </li>
         </ul>
     </div>
+  </div>
     <script src="script.js"> </script>
 </body>
 </html>
