@@ -43,7 +43,7 @@ input:focus {
 
 .container {
   height: auto;
-  width: 480px;
+  width: 100%;
   margin-top: 10px;
   margin-left: auto;
   align-items: center;
@@ -51,8 +51,8 @@ input:focus {
   display: inline-block;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0.7px);
-  -webkit-backdrop-filter: blur(0.7px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -70,7 +70,7 @@ ul {
 }
 
 li {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
   text-align: center;
   width: 25px;
